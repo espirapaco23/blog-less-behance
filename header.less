@@ -1,0 +1,38 @@
+//main: style.less
+
+.header {
+  padding: 1.2rem 0;
+  position: relative;
+
+  @media @tablet {
+    background-color: aqua;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header.fixed {
+  width: 100%;
+  position: fixed;
+  background-color: aqua;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+  z-index: 100000;
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  @media @mobile {
+    display: none;
+  }
+}

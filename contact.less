@@ -1,0 +1,46 @@
+// main: style.less
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  background: url(https://via.placeholder.com/475x700) right center no-repeat;
+
+  @media @ipad {
+    width: 100%;
+    background: none;
+  }
+}
+
+.con__left {
+  width: 47%;
+
+  padding: 28px 32px;
+
+  @media @ipad {
+    width: 100%;
+  }
+}
+
+.con__in {
+  color: @black;
+  font-size: 15px;
+  font-weight: 300;
+
+  margin: 31px 0 45px;
+  padding: 0;
+  list-style: none;
+}
+
+.con__in-li {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 12px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.icon {
+  margin-right: 12px;
+}

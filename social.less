@@ -1,0 +1,28 @@
+//main: style.less
+
+.social {
+  display: flex;
+  margin-bottom: 42px;
+}
+
+.social__link {
+  margin-right: 10px;
+  text-decoration: none;
+  border: 2px solid @gray;
+  border-radius: 3px;
+  overflow: hidden;
+  padding: 9px;
+  background-color: rgb(61, 233, 233);
+
+  transition: transform 0.2s linear;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  @media @tablet {
+    border: none;
+    padding: auto;
+    margin-right: 3px;
+  }
+}

@@ -1,0 +1,115 @@
+// main: style.less
+
+.modal__work {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.modal__work-prev {
+  position: relative;
+  width: 65%;
+  overflow: hidden;
+
+  @media @ipad {
+    width: 100%;
+  }
+}
+
+.modal__work-con {
+  position: relative;
+  width: 35%;
+  padding: 3.3rem 6.5rem 1rem 1.73rem;
+
+  @media @ipad {
+    width: 100%;
+    text-align: center;
+    padding: 25px 10px;
+  }
+}
+
+.modal__work-header {
+  margin-bottom: 2.2rem;
+}
+
+.modal__work-photo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+
+  transform: translate3d(-50%, -50%, 0);
+
+  @media @ipad {
+    position: relative;
+    min-width: 100%;
+  }
+}
+
+.modal__work-title {
+  margin-bottom: 0.2rem;
+  color: @black;
+  font-size: 2.12rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.modal__work-info {
+  color: @gray;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.modal__work-divider {
+  margin: 0 1rem;
+}
+
+.modal__work-client {
+  margin-bottom: 2.2rem;
+}
+
+.modal__work-clienttit {
+  color: @black;
+  font-size: 1.06rem;
+  font-weight: 700;
+
+  margin-bottom: 0.2rem;
+}
+
+.modal__work-clientcom {
+  color: @gray;
+  font-style: italic;
+  font-size: 0.94rem;
+}
+
+.modal__work-text {
+  color: @gray;
+  font-size: 0.8rem;
+  line-height: 2;
+  font-weight: 300;
+
+  margin-bottom: 8.66rem;
+}
+
+.modal__work-footer {
+  position: absolute;
+  padding: 0 1.8rem 1rem;
+
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.modal-work__btn {
+  color: @black;
+  font-size: 0.94rem;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  background: none;
+  border: 0;
+  padding: 0;
+  font-family: inherit;
+}

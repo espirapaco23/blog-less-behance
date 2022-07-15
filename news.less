@@ -1,0 +1,47 @@
+// main: style.less
+
+.news {
+  margin-top: 15rem;
+  margin-bottom: 140px;
+
+  @media @ipad {
+    margin-top: 180px;
+    margin-bottom: 75px;
+  }
+}
+
+.news__header {
+  margin-bottom: 3.6rem;
+  text-align: center;
+}
+
+.news__title {
+  margin-bottom: 0.2rem;
+  font-size: 3rem;
+  color: @black;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  @media @tablet {
+    font-size: 30px;
+  }
+}
+
+.news__text {
+  font-size: 1.2rem;
+  color: @gray-light;
+  font-weight: 300;
+}
+
+.news__footer {
+  text-align: right;
+}
+
+.news__link {
+  font-size: 14px;
+  color: @gray;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
